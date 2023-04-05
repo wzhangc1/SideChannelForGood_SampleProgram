@@ -1,0 +1,9 @@
+ipcs
+ipcrm -a
+
+./program
+./verifier
+
+modprobe msr
+sudo ~/uarch-configure/intel-prefetch/intel-prefetch-disable -c 0 -e
+sudo ~/uarch-configure/intel-prefetch/intel-prefetch-disable -c 0 -d
